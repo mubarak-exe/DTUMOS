@@ -14,6 +14,7 @@ def haversine(lat1, lon1, lat2, lon2):
     return km
 
 model = pickle.load(open(f"./data/extra_data/ETA_model.pkl", 'rb'))
+print(8+3)
 hjd_2018 = gpd.read_file('./data/extra_data/HangJeongDong_ver20180401.geojson')
 
 def ETA_data_prepared(self, model=model,HJD=hjd_2018):
